@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.view.ServiceFragment"
+    >
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        />
+
+    <ScrollView
+        android:id="@+id/service_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/issue_author_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/service_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="2dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@android:color/darker_gray"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/avatar_1"
+                    />
+
+                <TextView
+                    android:id="@+id/service_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    tools:text="Name of the Service"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/service_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Description of the Service"
+                android:layout_marginTop="16dp"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                />
+
+            <com.google.android.material.divider.MaterialDivider
+                app:dividerColor="@color/gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnCount="2"
+                android:rowCount="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:orientation="vertical"
+                    android:layout_columnWeight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/solved_issues_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Overline"
+                        android:text="@string/service_solved_issues_heading"
+                        />
+
+                    <TextView
+                        android:id="@+id/solved_issues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/TextAppearance.MaterialComponents.Headline4"
+                        tools:text="32"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:orientation="vertical"
+                    android:layout_columnWeight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/reserved_issues_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.MaterialComponents.Overline"
+                        android:text="@string/service_reserved_issues_heading"
+                        />
+
+                    <TextView
+                        android:id="@+id/reserved_issues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/TextAppearance.MaterialComponents.Headline4"
+                        tools:text="6"
+                        />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

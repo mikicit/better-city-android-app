@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/issuesFragment"
+        android:title="@string/bottom_nav_issues"
+        android:enabled="true"
+        android:icon="@drawable/baseline_map_24"
+        />
+    <item
+        android:id="@+id/myIssuesFragment"
+        android:title="@string/bottom_nav_my_issues"
+        android:enabled="true"
+        android:icon="@drawable/baseline_list_24"
+        />
+    <item
+        android:id="@+id/notificationsFragment"
+        android:title="@string/bottom_nav_notifications"
+        android:enabled="true"
+        android:icon="@drawable/baseline_notifications_24"
+        />
+    <item
+        android:id="@+id/myProfileFragment"
+        android:title="@string/bottom_nav_my_profile"
+        android:enabled="true"
+        android:icon="@drawable/baseline_person_24"
+        />
+</menu>

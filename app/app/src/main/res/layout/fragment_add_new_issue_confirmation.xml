@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.view.AddNewIssueConfirmationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/page_confirmation_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_issue_confirmation_description"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="@string/add_new_issue_issue_photo_label"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/issue_photo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:background="@color/gray_light"
+            android:layout_marginTop="8dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="@string/add_new_issue_issue_location_label"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            style="?attr/materialCardViewElevatedStyle"
+            >
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/issue_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/issue_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="Address"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="@string/add_new_issue_issue_name_label"
+            />
+
+        <TextView
+            android:id="@+id/issue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="Issue name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="@string/add_new_issue_issue_description_label"
+            />
+
+        <TextView
+            android:id="@+id/issue_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="Description"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:text="@string/add_new_issue_issue_category_label"
+            />
+
+        <TextView
+            android:id="@+id/issue_caterogy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="Category name"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

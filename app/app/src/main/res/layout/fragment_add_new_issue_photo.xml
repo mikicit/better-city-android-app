@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".main.view.AddNewIssuePhotoFragment"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/add_new_issue_photo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_issue_add_photo_description"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginBottom="16dp"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/add_new_issue_photo"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:background="@color/gray_light"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+            />
+
+        <Button
+            android:id="@+id/add_new_issue_make_photo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_issue_make_photo_button"
+            android:layout_marginTop="16dp"
+            app:icon="@drawable/baseline_camera_24"
+            style="@style/Widget.Material3.Button.Icon"
+            />
+
+        <Button
+            android:id="@+id/add_new_issue_add_photo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_issue_add_photo_button"
+            app:icon="@drawable/baseline_insert_photo_24"
+            style="@style/Widget.Material3.Button.Icon"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

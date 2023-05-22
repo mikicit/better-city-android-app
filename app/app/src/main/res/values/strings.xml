@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">A Better City</string>
+
+    <!-- Pages Titles -->
+    <string name="issues_page">Issues</string>
+    <string name="my_issues_page">My Issues</string>
+    <string name="notifications_page">Notifications</string>
+    <string name="my_profile_page">My Profile</string>
+    <string name="profile_page">User Profile</string>
+    <string name="service_profile_page">Service Profile</string>
+    <string name="issue_page">Issue</string>
+    <string name="issue_location_page">Issue Location</string>
+    <string name="new_issue_page">New Issue</string>
+
+    <!-- Service -->
+    <string name="service_solved_issues_heading">Solved issues</string>
+    <string name="service_reserved_issues_heading">Reserved issues</string>
+
+    <!-- Add New Issue -->
+    <string name="add_new_issue_location_page">Set Location</string>
+    <string name="add_new_issue_photo_page">Add Photo</string>
+    <string name="add_new_issue_description_page">Describe Issue</string>
+    <string name="add_new_issue_confirmation_page">Confirm</string>
+    <string name="add_new_issue_button_back">Back</string>
+    <string name="add_new_issue_button_next">Next</string>
+    <string name="add_new_issue_add_photo_description">Attach a picture of the issue. Try to take a picture so that the problem is clearly visible.</string>
+    <string name="add_new_issue_category_description">Choose one category that best fits the issue.</string>
+    <string name="add_new_issue_description_description">Try to describe the problem briefly. Give a short title for the problem and write a short description of the problem.</string>
+    <string name="add_new_issue_confirmation_description">Check the information you entered and click the "Publish" button.</string>
+    <string name="add_new_issue_issue_name_helper_text">The number of characters must be from 8 to 64.</string>
+    <string name="add_new_issue_issue_description_helper_text">The number of characters must be from 20 to 1000.</string>
+    <string name="add_new_issue_make_photo_button">Make Photo</string>
+    <string name="add_new_issue_add_photo_button">Upload Photo</string>
+    <string name="add_new_issue_step_text">Step %s / %s</string>
+    <string name="add_new_issue_issue_name_label">Issue name</string>
+    <string name="add_new_issue_issue_category_label">Category</string>
+    <string name="add_new_issue_issue_description_label">Description</string>
+    <string name="add_new_issue_issue_photo_label">Photo</string>
+    <string name="add_new_issue_issue_location_label">Location</string>
+    <string name="add_new_issue_submit_button">Publish</string>
+    <string name="add_new_issue_cancel_button">Back</string>
+    <string name="add_new_issue_success">A new issue has been successfully added!</string>
+
+    <!-- Profile -->
+    <string name="profile_published_issues_heading">Published Issues</string>
+
+    <!-- My Profile -->
+    <string name="my_profile_edit_profile_button">Edit Profile</string>
+    <string name="my_profile_logout_button">Sign Out</string>
+
+    <!-- My Issues Tabs -->
+    <string name="my_issues_tab_all">All</string>
+    <string name="my_issues_tab_active">Active</string>
+    <string name="my_issues_tab_solved">Solved</string>
+    <string name="my_issues_tab_solving">Solving</string>
+    <string name="my_issues_tab_moderation">In Moderation</string>
+
+    <!-- View Type -->
+    <string name="view_type_list">List</string>
+    <string name="view_type_map">Map</string>
+
+    <!-- Issue Details -->
+    <string name="issue_created_heading">Date of publication</string>
+    <string name="issue_likes_heading">Likes</string>
+    <string name="issue_address_heading">Address</string>
+    <string name="issue_description_heading">Description</string>
+    <string name="issue_category_heading">Category</string>
+    <string name="issue_author_heading">Author</string>
+    <string name="issue_status_info_button">Status info</string>
+    <string name="issue_like_button">Add like</string>
+    <string name="issue_map_button">Show on the map</string>
+    <string name="issue_bottom_sheet_service_heading">Service</string>
+    <string name="issue_bottom_sheet_solution_date_heading">Solution date</string>
+    <string name="issue_bottom_sheet_reservation_date_heading">Reservation date</string>
+    <string name="issue_bottom_sheet_description">Description</string>
+
+    <!-- Bottom Nav -->
+    <string name="bottom_nav_issues">Issues</string>
+    <string name="bottom_nav_my_issues">My Issues</string>
+    <string name="bottom_nav_notifications">Notifications</string>
+    <string name="bottom_nav_my_profile">My Profile</string>
+
+    <!-- Accessibility -->
+    <string name="add_new_issue">Add New Issue</string>
+
+    <!-- Sign In -->
+    <string name="sign_in_page">Sign In</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_in_email_label">Email</string>
+    <string name="sign_in_password_label">Password</string>
+    <string name="sign_in_forgot_password">Forgot password?</string>
+    <string name="sign_in_error">Incorrect email or password</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_page">Sign Up</string>
+    <string name="sign_up_email_label">Email</string>
+    <string name="sign_up_password_label">Password</string>
+    <string name="sign_up_confirm_password_label">Confirm password</string>
+    <string name="sign_up_first_name_label">First name</string>
+    <string name="sign_up_last_name_label">Last name</string>
+    <string name="sign_up_button">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

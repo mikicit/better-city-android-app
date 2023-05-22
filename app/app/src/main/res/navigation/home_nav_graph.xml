@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/issuesFragment">
+
+    <fragment
+        android:id="@+id/issuesFragment"
+        android:name="dev.mikita.bettercity.main.view.IssuesFragment"
+        android:label="@string/issues_page"
+        tools:layout="@layout/fragment_issues" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="dev.mikita.bettercity.main.view.MyProfileFragment"
+        android:label="@string/my_profile_page"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="dev.mikita.bettercity.main.view.NotificationsFragment"
+        android:label="@string/notifications_page"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/myIssuesFragment"
+        android:name="dev.mikita.bettercity.main.view.MyIssuesFragment"
+        android:label="@string/my_issues_page"
+        tools:layout="@layout/fragment_my_issues" />
+</navigation>

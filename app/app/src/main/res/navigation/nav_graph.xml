@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.mikita.bettercity.main.view.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_issueFragment"
+            app:destination="@id/issueFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addNewIssueFragment"
+            app:destination="@id/addNewIssueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/issueFragment"
+        android:name="dev.mikita.bettercity.main.view.IssueFragment"
+        android:label="@string/issue_page"
+        tools:layout="@layout/fragment_issue" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_issueFragment_to_issueLocationFragment"
+            app:destination="@id/issueLocationFragment" />
+        <action
+            android:id="@+id/action_issueFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_issueFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/issueLocationFragment"
+        android:name="dev.mikita.bettercity.main.view.IssueLocationFragment"
+        android:label="@string/issue_location_page"
+        tools:layout="@layout/fragment_issue_location" >
+        <argument
+            android:name="coordinate"
+            app:argType="com.google.android.gms.maps.model.LatLng" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="dev.mikita.bettercity.main.view.UserProfileFragment"
+        android:label="@string/profile_page"
+        tools:layout="@layout/fragment_user_profile">
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewIssueFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssueFragment"
+        android:label="@string/new_issue_page"
+        tools:layout="@layout/fragment_add_new_issue" >
+        <action
+            android:id="@+id/action_addNewIssueFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="dev.mikita.bettercity.main.view.ServiceFragment"
+        android:label="@string/service_profile_page"
+        tools:layout="@layout/fragment_service">
+        <argument
+            android:name="uid"
+            app:argType="string" />
+    </fragment>
+    <include app:graph="@navigation/home_nav_graph" />
+</navigation>

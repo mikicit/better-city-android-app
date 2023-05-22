@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_new_issue_graph"
+    app:startDestination="@id/addNewIssueLocationFragment">
+    <fragment
+        android:id="@+id/addNewIssueCategoryFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssueCategoryFragment"
+        android:label="fragment_add_new_issue_category"
+        tools:layout="@layout/fragment_add_new_issue_category" >
+        <action
+            android:id="@+id/action_addNewIssueCategoryFragment_to_addNewIssueDescriptionFragment"
+            app:destination="@id/addNewIssueDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewIssueConfirmationFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssueConfirmationFragment"
+        android:label="fragment_add_new_issue_confirmation"
+        tools:layout="@layout/fragment_add_new_issue_confirmation" />
+    <fragment
+        android:id="@+id/addNewIssueDescriptionFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssueDescriptionFragment"
+        android:label="fragment_add_new_issue_description"
+        tools:layout="@layout/fragment_add_new_issue_description" >
+        <action
+            android:id="@+id/action_addNewIssueDescriptionFragment_to_addNewIssueConfirmationFragment"
+            app:destination="@id/addNewIssueConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewIssueLocationFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssueLocationFragment"
+        android:label="@string/add_new_issue_location_page"
+        tools:layout="@layout/fragment_add_new_issue_location">
+        <action
+            android:id="@+id/action_addNewIssueLocationFragment_to_addNewIssuePhotoFragment"
+            app:destination="@id/addNewIssuePhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewIssuePhotoFragment"
+        android:name="dev.mikita.bettercity.main.view.AddNewIssuePhotoFragment"
+        android:label="@string/add_new_issue_photo_page"
+        tools:layout="@layout/fragment_add_new_issue_photo">
+        <action
+            android:id="@+id/action_addNewIssuePhotoFragment_to_addNewIssueCategoryFragment"
+            app:destination="@id/addNewIssueCategoryFragment" />
+    </fragment>
+</navigation>
